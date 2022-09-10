@@ -1,0 +1,82 @@
+.container-title-skills-profile{
+    width: 100%;
+    display: flex;
+    margin-bottom: .3rem;
+}
+
+.title-skills-main{
+    width: 100%;
+    color: rgb(26, 26, 26);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+
+.title-skills{
+    width: 100%;
+    color: rgb(51, 51, 51);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+
+.value-skills{ 
+ float: right;
+ color: rgb(51, 51, 51);
+ font-family: 'Poppins', sans-serif;
+ font-weight: 300;
+ font-size: 1.6rem;
+}
+
+
+.bar-skills-profile{
+    height: .6rem;
+ background-color:#00cc8d;
+ border-radius: 3px;
+
+} 
+ 
+
+.container-exp{
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+
+.cargo-exp-txt{
+    color: rgb(56, 56, 56);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.company-detail-exp{
+    margin-top: 3px;
+    display: flex;
+}
+
+.company-name-exp{
+    color: rgb(31, 31, 31);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding-right: 2rem;
+}
+
+.company-end-exp{
+    color: rgb(31, 31, 31);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+ 
+}
+
+.company-description-exp-txt{
+    margin-top: 1.1rem;
+    color: rgb(78, 78, 78);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}

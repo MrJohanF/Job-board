@@ -1,0 +1,84 @@
+.section-about {
+  padding-top: 30rem;
+  padding-bottom: 3rem;
+  margin-top: -20vh;
+
+ .container_section_about{
+   padding-top: 10rem;
+   padding-bottom: 15rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  
+  .container_section_content{
+    padding: 2rem;
+  }
+
+
+ }
+
+
+ 
+}
+
+.section-features {
+ padding-bottom: 10rem;
+ padding-top: 5rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-prices {
+  background-color: white;
+  padding: 1rem 0 15rem 0;
+}
+
+.section-stories {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+
+.section-promotion {
+  position: relative;
+  padding: 1rem 0;
+}
+
+
+
+
+.section-staff {
+  padding: 10rem 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-secundary
+  );
+}
+
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../img/background-free.jpg);
+
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem $shadow;
+
+  height: 50rem;
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
+}

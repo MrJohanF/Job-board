@@ -1,0 +1,387 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4rem;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+
+    //change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.8rem 1.3rem $shadow;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem $shadow;
+  }
+  &--yellow {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: #e9d207;
+    color: rgb(0, 0, 0);
+
+    &.btn--movement {
+      animation: moveInUp 0.5s ease-out 0.25s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &--blue {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: $color-primary;
+    color: $color-white;
+
+    &.btn--movement {
+      animation: moveInUp 0.5s ease-out 0.25s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &--blue-dark {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: #0056b4;
+    color: $color-white;
+
+    &.btn--movement {
+      animation: moveInUp 0.5s ease-out 0.25s;
+      animation-fill-mode: backwards;
+    }
+  }
+}
+
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 3px;
+    transition: all 0.2s;
+  }
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($shadow, 0.15);
+    transform: translateX(-2px);
+  }
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($shadow, 0.15);
+    transform: translateX(0);
+  }
+}
+
+.btn-cuadrado {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+
+    //change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.8rem 1.3rem $shadow;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem $shadow;
+  }
+  &--green {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: #97c03e;
+    color: white;
+
+    &.btn--movement {
+      animation: moveInUp 0.5s ease-out 0.25s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &--red {
+    margin-left: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: #e74c3c;
+    color: $color-white;
+
+    &.btn--movement {
+      animation: moveInUp 0.5s ease-out 0.25s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &--blue-dark {
+    height: 2.61rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: #1c356e;
+    color: $color-white;
+  }
+
+  &--blue {
+    height: 2.61rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: #0056b4;
+    color: $color-white;
+  }
+}
+
+
+.btn-oferta {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.9rem 5.5rem;
+    display: inline-block;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.5rem;
+
+    //change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+  &:hover {
+    box-shadow: 0 0.8rem 1.3rem $shadow;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0.5rem 1rem $shadow;
+  }
+
+  &--blue {
+    height: 2.61rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    background-color: #0056b4;
+    color: $color-white;
+  }
+}
+
+.btn-cuadrado-submit {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 1.5rem 4rem;
+    transition: all 0.2s;
+    font-size: $default-font-size;
+
+    //change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+  &:hover {
+    background-color: #a83529;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem $shadow;
+  }
+
+  &--green {
+    border-radius: 3px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: #00cc8d;
+    color: $color-white;
+
+    &:hover {
+      background-color: #009e6c;
+    }
+
+    &.btn--movement {
+      animation: moveInUp 0.5s ease-out 0.25s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &--red {
+    margin-left: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: #e74c3c;
+    color: $color-white;
+
+    &.btn--movement {
+      animation: moveInUp 0.5s ease-out 0.25s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &--blue-dark {
+    height: 2.61rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    background-color: #e74c3c;
+    color: $color-white;
+
+    &.btn--movement {
+      animation: moveInUp 0.5s ease-out 0.25s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &--blue {
+    height: 2.61rem;
+    width: 10rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    background-color: #1b3fdd;
+    color: $color-white;
+
+    &:hover {
+      background-color: #1533bd;
+    }
+
+    &.btn--movement {
+      animation: moveInUp 0.5s ease-out 0.25s;
+      animation-fill-mode: backwards;
+    }
+  }
+}
+
+.btn-cuadrado-form {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.85rem 2.6rem;
+    display: inline-block;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    font-size: 1.1rem;
+ 
+    //change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+  &:hover {
+    //transform: translateY(-3px);
+
+    box-shadow: 0 0.8rem 1.1rem $shadow;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem $shadow;
+  }
+  &--yellow {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+
+    background-color: #ecdd00;
+    color: $color-text-dark3;
+
+    &.btn--movement {
+      animation: moveInUp 0.5s ease-out 0.25s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &--blue {
+    margin-left: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+
+    background-color: #1b3fdd;
+    color: $color-white;
+
+    &.btn--movement {
+      animation: moveInUp 0.5s ease-out 0.25s;
+      animation-fill-mode: backwards;
+    }
+  }
+}
+
+.btn-cuadrado-full {
+  &,
+  &:link,
+  &:visited {
+    height: 6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    display: inline-block;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.3rem;
+
+    //change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.8rem 1.3rem $shadow;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem $shadow;
+  }
+  &--yellow {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    background-color: #303fc4;
+    color: $color-white;
+
+    &.btn--movement {
+      animation: moveInUp 0.5s ease-out 0.25s;
+      animation-fill-mode: backwards;
+    }
+  }
+}

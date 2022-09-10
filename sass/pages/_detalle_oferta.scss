@@ -1,0 +1,145 @@
+.section-oferta-top {
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.section-text-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  color: #333;
+}
+
+.section-text-subtitles {
+  display: inline-flex;
+  padding-bottom: .5rem;
+}
+
+.option-text-detalle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #666666;
+}
+
+.btn-detalle-oferta {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.9rem 5.5rem;
+    display: inline-block;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.5rem;
+
+    //change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+  &:hover {
+    box-shadow: 0 0.8rem 1.3rem $shadow;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0.5rem 1rem $shadow;
+  }
+
+  &--blue {
+    float: right;
+    height: 2.61rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    background-color: #0056b4;
+    color: $color-white;
+    
+  }
+}
+
+.section-text-description-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.1rem;
+}
+
+.description-oferta-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #666666;
+}
+
+.section-oferta-skills {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+
+.container-block-oferta{
+width: 100%;
+height: 8rem;
+display: inline-flex;
+
+}
+
+.container-icon{
+padding-left: 2rem;
+width: 7rem;
+padding-top: 1.9rem;
+font-size: 4rem; 
+color: #00b427;
+}
+
+.container-info{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding-top: 1.7rem;
+    padding-left: 4rem;
+}
+
+.container-info-prize{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #0056b4;
+}
+
+.container-info-text{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #666666;
+}
+
+.social-club{
+  padding-left: 2rem;
+}
+
+
+.container-social-club{
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: #666666;
+}
+
+
+.container-social-club li{
+  padding-bottom: 1.2rem;
+}
+
+.section-skill-title{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #333;
+  padding-bottom: 2rem;
+}

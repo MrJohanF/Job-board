@@ -1,0 +1,80 @@
+.sub-tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .sub-tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  } 
+   
+  /* Change background color of buttons on hover */
+  .sub-tab button:hover {
+    background-color: #ddd;
+  }
+    
+  /* Create an active/current tablink class */
+  .sub-tab button.active {
+    background-color: #ccc;
+  }
+   
+  /* Style the tab content */
+  .sub-tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  
+  .sub-tabcontent-editDatos {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    animation: fadeEffect 1s;
+    /* Fading effect takes 1 second */
+   }
+
+  .option-sub-tabs{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 0;
+    margin-bottom: 5rem;
+    padding-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: rgb(90, 90, 90);
+    font-size: 1.8rem; 
+    border-left: solid;
+    border-left-color: $color-secundary;
+    transition: all .3s;
+
+&:hover{
+    height: 4rem;
+    border-left: solid;
+    border-left-color: $color-secundary;
+    margin-bottom: 1rem;
+    color: $color-text-dark3;
+}
+  }
+
+  
+  .option-sub-tabs:focus {
+    height: 4rem;
+    border-left: solid;
+    border-left-color: $color-secundary;
+    margin-bottom: 1rem;
+    color: $color-text-dark3; 
+  }
+  
+
+
+
+

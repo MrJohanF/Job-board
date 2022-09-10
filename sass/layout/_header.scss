@@ -1,0 +1,41 @@
+.header {
+  height: 85rem;
+  background-image: linear-gradient($color-primary, $color-secundary),
+    url(../img/background.png);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+  &__logo {
+    position: absolute;
+    height: 6.5rem;
+    top: 4rem;
+    left: 15%;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+  }
+
+  &__content-left {
+    position: absolute;
+    top: 18rem;
+    left: 55%;
+  }
+
+
+  .container_header {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+
+    .container_header_left_text {
+      padding: 2rem;
+    }
+  }
+
+
+}

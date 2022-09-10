@@ -1,0 +1,33 @@
+@mixin clearfix {
+
+      &::after{
+          content: "";
+          display: table;
+          clear: both;
+      }
+
+}
+
+@mixin background-gradient {
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary, $color-secundary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+}
+
+@mixin background-gradient-dark {
+    display: inline-block;
+    background-image: linear-gradient(to right, rgba($color-text-dark, 1), rgba($color-text-dark2, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}

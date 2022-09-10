@@ -1,0 +1,67 @@
+
+.divion-graficas{
+  margin-bottom: 5rem;
+}
+
+.titulo-section-graficas{
+  color: #052165;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+
+.container_grafica {
+  width: 100%;
+  height: 10rem;
+  border-radius: 1rem;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.2rem 0.8rem 3rem rgba(0, 0, 0, 0.25) ;
+
+  &-purple {
+    background-image: linear-gradient(to right bottom, #745df2, #958af4);
+  }
+
+  &-green {
+    background-image: linear-gradient(to right bottom, #71c2cb, #91d4d4);
+  }
+
+  &-blue {
+    background-image: linear-gradient(to right bottom, #5f73da, #608ddd);
+  }
+} 
+
+
+.icon-graficas{
+  width: 5rem; 
+}
+
+.container-info-graficas{
+  display: grid;
+  padding-left: 2rem;
+}  
+
+.number-graficas {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: -9px;
+}
+
+.texto-card-graficas {
+  color: #ffffff; 
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.contener-patron-graficas{
+  padding-bottom: 5rem;
+  box-shadow: 0.2rem 0.8rem 3rem rgba(0, 0, 0, 0.25) ;
+}

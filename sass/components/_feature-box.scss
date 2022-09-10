@@ -1,0 +1,40 @@
+.container_feature-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(208px, 1fr));
+    padding: 2rem;
+    gap: 2rem;
+
+    .feature-box{
+
+        background-color: rgba($color-white, 1);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        padding: 2.5rem;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 0 1rem 1rem rgba($shadow, .1);
+        transition: transform .3s;
+        height: 240px;
+
+        &__icon{
+            font-size: 6rem;
+            margin-bottom: .5rem;
+            @include background-gradient;
+        }
+        &:hover{
+            transform: translateY(-.5rem) scale(1.04); 
+        }
+
+    }
+
+}
+
+
+.icon_performance{
+    
+    &-container{
+        height: 10rem;
+        width: 10rem;
+    }
+}

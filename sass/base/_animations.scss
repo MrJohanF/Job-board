@@ -1,0 +1,74 @@
+@keyframes cambiar{
+
+      0%{ margin-top: 0;}
+      20%{ margin-top: 0;}
+ 
+      25%{margin-top: -$font-size-animation-header;}
+      50%{margin-top: -$font-size-animation-header;}
+ 
+      55%{margin-top: -($font-size-animation-header * 2);}
+      80%{margin-top: -($font-size-animation-header * 2);}
+ 
+      85%{margin-top: -$font-size-animation-header;}
+      95%{margin-top: -$font-size-animation-header;}
+ 
+ }
+
+
+
+@keyframes moveInLeft{
+    0%{
+          opacity: 0;
+          transform:  translateX(-50px);
+    }
+    100%{
+          opacity: 1; 
+          transform: translate(0);
+    }
+}
+
+@keyframes moveInRight{
+    0%{
+          opacity: 0;
+          transform:  translateX(100px);
+    }
+    80%{
+      transform:  translateX(0px);
+    }
+    100%{
+          opacity: 1;
+          transform: translate(0);
+    }
+}
+@keyframes Appear{
+    0%{
+          
+          opacity: 0;
+          
+    }
+    80%{
+     
+    }
+    100%{
+        
+          opacity: 1;
+      
+    }
+}
+@keyframes moveInUp{
+    0%{
+          opacity: 0;
+          transform:  translateY(50px);
+    }
+    100%{
+          opacity: 1;
+          transform: translate(0);
+    } 
+}
+
+/* Animation of tabs */
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }

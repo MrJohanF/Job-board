@@ -1,0 +1,31 @@
+.profile-img{
+    border-radius: 5px;
+    width: 24rem; 
+    height: 24rem;
+} 
+
+
+.profile-card{
+
+    background-color: $color-white;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem $shadow;
+    height: 43rem;
+
+    &__form {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 5rem 2.5rem; 
+    }
+
+    &__content{
+        padding-top: 4rem;
+    }
+
+    &__skills{
+        text-align: center;
+        padding-right: 4rem;
+        padding-top: 4rem; 
+    }
+}
