@@ -1,0 +1,29 @@
+.feature-dashboard{
+
+    background-color: rgba($color-white, 1);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    height: 15rem;
+
+    &__icon{
+        font-size: 6rem;
+        margin-bottom: .5rem;
+        @include background-gradient;
+    }
+
+
+} 
+
+.icon_performance-dashboard{
+    
+    &-container{
+        height: 5rem;
+        width: 5rem;
+    }
+} 
+
+

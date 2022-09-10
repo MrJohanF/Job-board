@@ -1,0 +1,22 @@
+{
+  "name": "multiempleo",
+  "version": "1.0.0",
+  "description": "Encuentra tu IT.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Zearix tech",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "amd-loader": "0.0.8",
+    "composer": "^4.1.0",
+    "express": "^4.17.1",
+    "sass": "^1.32.13",
+    "sortablejs": "^1.13.0",
+    "swiper": "^8.1.0"
+  }
+}

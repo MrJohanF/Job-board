@@ -1,0 +1,560 @@
+.form {
+    &__group{
+        width: 100%;
+        display: inline-flex;
+    }
+    &__email-input{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+    &__group:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+
+    &__input {
+        font-size:  1.5rem;
+        font-family: inherit;
+        font-family: 'Poppins', sans-serif;
+        color: inherit; 
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);
+        border: none;
+        border-bottom:  3px solid transparent;
+        width: 100%;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem $shadow;
+            border-bottom: 3px solid $color-table3-prices1; 
+        }
+
+        &:focus:invalid{
+            border-bottom: 3px solid $color-table2-prices2;
+        }
+
+        &::-webkit-input-placeholder{
+            color: $color-text-dark2;
+        }
+    }
+
+
+    &__label {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-1.5rem);
+    }
+}
+
+
+.form-browser {
+    &__group{
+        width: 100%;
+        display: inline-flex;
+    }
+    &__email-input{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+    &__group:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+
+    &__input {
+        font-size:  1.5rem;
+        font-family: inherit;
+        font-family: 'Poppins', sans-serif;
+        color: inherit; 
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, 1);
+        border: none;
+        border-bottom:  3px solid transparent;
+        width: 100%;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem $shadow;
+            border-bottom: 3px solid $color-table3-prices1; 
+        }
+
+        &:focus:invalid{
+            border-bottom: 3px solid $color-table2-prices2;
+        }
+
+        &::-webkit-input-placeholder{
+            color: $color-text-dark2;
+        }
+    }
+
+
+    &__label {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-1.5rem);
+    }
+}
+
+// css form login
+
+.form-login {
+     
+
+    margin-right: 10%; 
+    margin-left: 10%;
+    text-align: center;
+    
+    &__group{
+        width: 100%; 
+    }
+    &__email-input{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+    &__group:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__input {
+        font-size:  1.5rem;
+        font-family: inherit;
+        font-family: 'Poppins', sans-serif;
+        color: inherit;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-radius: 3px;
+        border: solid;
+        border-width: 2px;
+        background-color: rgba($color-white, .5);
+        border-color: #dedede; 
+        width: 100%;
+        text-indent: 18px;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid $color-table3-prices1; 
+        }
+
+        &:focus:invalid{
+            border-bottom: 2px solid $color-table2-prices2;
+        }
+
+        &::-webkit-input-placeholder{
+            color: $color-text-dark2;
+        }
+    }
+
+
+    &__label {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        text-align: left;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-1.5rem);
+    }
+}
+
+//css form buscador
+
+
+.form-browser {
+    &__group{
+        width: 100%;
+        display: inline-flex;
+    }
+    &__email-input{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+    &__group:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+
+    &__input {
+        font-size:  1.5rem;
+        font-family: inherit;
+        font-family: 'Poppins', sans-serif;
+        color: inherit; 
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, 1);
+        border: none;
+        border-bottom:  3px solid transparent;
+        width: 100%;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem $shadow;
+            border-bottom: 3px solid $color-table3-prices1; 
+        }
+
+        &:focus:invalid{
+            border-bottom: 3px solid $color-table2-prices2;
+        }
+
+        &::-webkit-input-placeholder{
+            color: $color-text-dark2;
+        }
+    }
+
+
+    &__label {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-1.5rem);
+    }
+}
+
+
+
+
+//css form social style
+
+.form-social {
+     
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    
+    &__group{
+        width: 100%; 
+    }
+    &__email-input{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block;
+    } 
+    &__group:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__instagram {
+        font-size:  1.5rem;
+        font-family: inherit;
+        font-family: 'Poppins', sans-serif;
+        color: inherit;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-radius: 3px;
+        border: solid;
+        border-width: 2px;
+        background: url(/img/instagram.png) no-repeat scroll 1rem $margin-top-social-icon;
+        background-size: $size-social-icon;
+        border-color: #dedede; 
+        width: 94%;
+        padding-left: 5.1rem;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid $color-table3-prices1; 
+        }
+
+        &:focus:invalid{
+            border-bottom: 2px solid $color-table2-prices2;
+        }
+
+        &::-webkit-input-placeholder{
+            color: $color-text-dark2;
+        }
+        
+        
+
+    }
+
+    &__facebook {
+        font-size:  1.5rem;
+        font-family: inherit;
+        font-family: 'Poppins', sans-serif;
+        color: inherit;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-radius: 3px;
+        border: solid;
+        border-width: 2px;
+        background: url(/img/facebook.png) no-repeat scroll 1rem $margin-top-social-icon;
+        background-size: $size-social-icon;
+        border-color: #dedede; 
+        width: 94%;
+        padding-left: 5.1rem;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid $color-table3-prices1; 
+        }
+
+        &:focus:invalid{
+            border-bottom: 2px solid $color-table2-prices2;
+        }
+
+        &::-webkit-input-placeholder{
+            color: $color-text-dark2;
+        }
+    }
+
+    &__youtube {
+        font-size:  1.5rem;
+        font-family: inherit;
+        font-family: 'Poppins', sans-serif;
+        color: inherit;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-radius: 3px;
+        border: solid;
+        border-width: 2px;
+        background: url(/img/youtube.png) no-repeat scroll 1rem $margin-top-social-icon;
+        background-size: $size-social-icon;
+        border-color: #dedede; 
+        width: 94%;
+        padding-left: 5.1rem;
+        display: block;
+        transition: all .3s;
+
+        &:focus { 
+            outline: none;
+            border-bottom: 2px solid $color-table3-prices1; 
+        }
+
+        &:focus:invalid{
+            border-bottom: 2px solid $color-table2-prices2;
+        }
+
+        &::-webkit-input-placeholder{
+            color: $color-text-dark2;
+        }
+        
+        
+
+    }
+
+    &__whatsapp {
+        font-size:  1.5rem;
+        font-family: inherit;
+        font-family: 'Poppins', sans-serif;
+        color: inherit;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-radius: 3px;
+        border: solid;
+        border-width: 2px;
+        background: url(/img/whatsapp-logo.png) no-repeat scroll 1rem $margin-top-social-icon;
+        background-size: $size-social-icon;
+        border-color: #dedede; 
+        width: 94%;
+        padding-left: 5.1rem;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid $color-table3-prices1;
+        }
+
+        &:focus:invalid{
+            border-bottom: 2px solid $color-table2-prices2;
+
+        }
+
+        &::-webkit-input-placeholder{
+            color: $color-text-dark2;
+        }
+        
+        
+
+    }
+
+    &__linkedin {
+        font-size:  1.5rem;
+        font-family: inherit;
+        font-family: 'Poppins', sans-serif;
+        color: inherit;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-radius: 3px;
+        border: solid;
+        border-width: 2px;
+        background: url(/img/linkedin.png) no-repeat scroll 1rem $margin-top-social-icon;
+        background-size: $size-social-icon;
+        border-color: #dedede; 
+        width: 94%;
+        padding-left: 5.1rem;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid $color-table3-prices1; 
+        }
+
+        &:focus:invalid{
+            border-bottom: 2px solid $color-table2-prices2;
+        }
+
+        &::-webkit-input-placeholder{
+            color: $color-text-dark2;
+        } 
+        
+         
+
+    }
+
+
+    &__label {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        text-align: left;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-1.5rem);
+    }
+}
+
+.register__type-customer{
+
+    width: 100%;
+    text-align: left;
+    display: inline-flex;
+    margin-bottom: 2rem;
+}
+
+.register__option-radio{
+    padding-left: 2rem;
+
+   
+    
+}
+
+.register__option-label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: rgb(118, 118, 118);
+    padding-right: 2rem; 
+}
+
+
+.formtext{
+    font-family: 'Poppins', sans-serif;
+    width: 98.7%;
+    height: 20rem;
+    border: 2px solid #ccc; 
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: vertical;
+  }
+
+  .formtext-blocked{
+    font-family: 'Poppins', sans-serif;
+    width: 98.7%;
+    height: 20rem;
+    border: 2px solid #ccc; 
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
+.container-info-youtube{
+    display: block;
+}
+
+.container-url-video{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(219, 219, 219);
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: inline-flex;
+    width: 100%;
+} 
+ 
+.container-url-video-title{
+    padding-left: 1.5rem;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: rgb(179, 179, 179);
+}
+
+.container-url-video-close{
+    color: rgba(255, 0, 0, 0.651);
+    padding-right: 1rem;
+    cursor: pointer;
+    float: right;
+    font-size: 2rem;
+}
+
+.container-video{
+    display: block;
+}
+
+

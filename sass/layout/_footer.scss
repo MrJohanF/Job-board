@@ -1,0 +1,259 @@
+.footer {
+    background-image: linear-gradient(to bottom, rgba(#25448c, .97) 60%, rgba( #071029, .99)), url(../img/world.jpg); 
+    background-size: cover; 
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    padding-top: 5rem;
+
+
+    .content-footer-logo{
+        padding-bottom: 2rem;
+    }
+
+
+
+    &__background{
+    width: 100%;
+    height: 40rem;
+    margin-bottom: -10rem;
+     background-color: white;
+     -webkit-clip-path: ellipse(90% 35% at 12% 3%);
+     clip-path: ellipse(90% 35% at 12% 3%); 
+    } 
+
+    &__logo-box{
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+
+    &__logo {
+        width: 10rem;
+        height: auto; 
+    } 
+
+    &__navigation{
+        padding-top: 2rem;
+        display: inline-block;
+    }
+
+    &__navigation-social{
+        padding-top: 2rem;
+        display: inline-block;
+    }
+
+    &__list {
+        
+        list-style: none;
+    }
+
+    &__item {
+        
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400; 
+        display: inline-flex;
+        list-style: none;
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+
+   
+    }
+    
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-text-dark2;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+        &:hover,
+        &:active{
+            color: #ecdd00; 
+            box-shadow: 0 1rem 2rem $shadow;
+            transform: scale(1.3); 
+        }
+    }
+
+        //Style list Contact
+
+        &__item-contacto {
+            padding: .5rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            list-style: none; 
+            display: block;
+            &:not(:last-child){
+                margin-right: 1.5rem;
+            }
+    
+    
+        }
+        
+        &__link-contacto{
+            &:link, 
+            &:visited { 
+                color: $color-text-dark2;
+                text-transform: uppercase;
+                transition: all .2s;
+                display: block;
+                text-decoration: none;
+            }
+            &:hover,
+            &:active{
+                color: #ecdd00;
+            }
+        }
+
+    //Style list kills
+
+    &__item-skills {
+        padding: .5rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        list-style: none; 
+        display: block;
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+
+
+    }
+    
+    &__link-skills{
+        &:link,
+        &:visited { 
+            color: rgb(172, 169, 218);
+            text-transform: uppercase;
+            transition: all .2s;
+            display: block;
+            text-decoration: none;
+        }
+        &:hover,
+        &:active{
+            
+            color: #ecdd00;
+            transform: translateX(1.1rem); 
+        }
+    }
+
+    //Style list Social networks
+
+    &__item-social {
+        padding: .5rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        list-style: none; 
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+
+
+    }
+    
+    &__link-social{
+        &:link, 
+        &:visited { 
+            color: $color-text-dark2;
+            text-transform: uppercase;
+            transition: all .2s;
+            display: inline-block;
+            text-decoration: none;
+        }
+        &:hover,
+        &:active{
+            color: $color-secundary;
+        }
+    }
+    &__copyright{   
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        color: gainsboro;
+        padding-top: 2.5rem; 
+        width: 100%;
+    }
+}
+
+
+.form__group{
+    padding-top: 3rem;
+}
+
+.section-skills{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+.logo-footer{
+    float: left;
+    padding-right: 2.5rem;
+    padding-top: 2rem;
+}
+
+.footer-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: gainsboro;
+    font-size: 3.5rem;
+}
+
+.footer-subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: gainsboro;
+    font-size: 2rem;
+}
+
+.footer-subtitle-skills{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: gainsboro;
+    font-size: 1.5rem;
+}
+
+.footer__img-whatsapp{
+    width: 10rem;
+}
+
+
+.footer__contacto{
+    width: 100%;
+    display: inline-flex;
+}
+
+
+
+.footer_container_header{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    padding: 2rem;
+
+    .footer_container_header__info{
+
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+
+        .footer_qr{
+            align-self: center;
+            justify-self: end;
+        }
+    }
+
+}
+
+.container_footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 2rem;
+
+}
+
+.container_bottom{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    padding: 2rem;
+}

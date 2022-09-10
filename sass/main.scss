@@ -1,0 +1,61 @@
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+ 
+@import "components/popup";
+@import "components/button";
+@import "components/search-tool";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/card";
+@import "components/story";
+@import "components/bg-video";
+@import "components/form";  
+@import "components/card-selection";  
+@import "components/card-invitation"; 
+@import "components/promotion";
+@import "components/recent-positions";
+@import "components/swiper"; 
+@import "components/tooltip";
+@import "components/profile-card";
+@import "components/navbar";
+@import "components/feature-dashboard";
+@import "components/collapsible";
+@import "components/skills"; 
+@import "components/graphics-cards";
+@import "components/recommend";
+ 
+@import "layout/browser";
+@import "layout/header";
+@import "layout/browser-profile";
+@import "layout/grid";
+@import "layout/footer"; 
+@import "layout/tabs";
+@import "layout/sub-tabs"; 
+@import "layout/navigation"; 
+
+
+@import "pages/home";
+@import "pages/dashboard"; 
+@import "pages/profile";
+@import "pages/company-profile";
+@import "pages/ofertas";
+@import "pages/detalle_oferta";
+
+
+@import "layout/media-query";
+
+
+
+
+
+
+
+
+
