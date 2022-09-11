@@ -81,10 +81,11 @@ if (isset($_SESSION["lang"])) {
             $email = $_GET['email']; // Set email variable
             $token = $_GET['token']; // Set hash variable
 
-            $search = "SELECT email, token FROM candidato WHERE email='" . $email . "' AND token='" . $token . "'";
+            $search = "SELECT email_empresa, token FROM empresa WHERE email_empresa='" . $email . "' AND token='" . $token . "'";
             $register_user_query = mysqli_query($connection, $search);
             $match  = mysqli_num_rows($register_user_query);
 
+            
             if ($match > 0) {
                 // We have a match, activate the account
 
@@ -138,7 +139,7 @@ if (isset($_SESSION["lang"])) {
 
                             $.ajax({
                                 type: "POST",
-                                url: "php/reset_password.php",
+                                url: "php/reset_password_company.php",
                                 data: ob,
                                 beforeSend: function(objeto) {},
                                 success: function(data) {
