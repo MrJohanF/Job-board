@@ -35,7 +35,7 @@ if (isset($_SESSION["lang"])) {
 
     <link href="/css/awesomefont/css/all.min.css" rel="stylesheet">
     <script type="text/javascript" src="/js/jquery-3.6.0.js"></script>
-
+    <script src="/js/type_effect.js"></script>
     <script type="text/javascript" src="/js/selectlist.js"></script>
     <link rel="stylesheet" href="css/icon-font.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -60,14 +60,12 @@ if (isset($_SESSION["lang"])) {
     <script>
         $(document).ready(function() {
 
-
-
-            var maxLength = 150;
+            let maxLength = 150;
             $(".show-read-more").each(function() {
-                var myStr = $(this).text();
+                let myStr = $(this).text();
                 if ($.trim(myStr).length > maxLength) {
-                    var newStr = myStr.substring(0, maxLength);
-                    var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+                    let newStr = myStr.substring(0, maxLength);
+                    let removedStr = myStr.substring(maxLength, $.trim(myStr).length);
                     $(this).empty().html(newStr);
                     $(this).append(' <a href="javascript:void(0);" class="read-more"></a>');
                     $(this).append('<span class="more-text">' + removedStr + '</span>');
@@ -106,8 +104,8 @@ if (isset($_SESSION["lang"])) {
 
                         <form id="form_lang" method="POST">
                             <select style="display: none; visibility: hidden;" name="lang" id="select_lang">
-                                <option value="es">asd</option>
-                                <option value="en">asd</option>
+                                <option value="es">lang</option>
+                                <option value="en">lang</option>
                             </select>
                         </form>
 
@@ -115,6 +113,9 @@ if (isset($_SESSION["lang"])) {
 
 
                         <script>
+
+                            let ddData = [];
+
                             let lang = "<?php if (isset($_SESSION["lang"])) {
                                             echo $_SESSION["lang"];
                                         } else {
@@ -124,7 +125,7 @@ if (isset($_SESSION["lang"])) {
 
                             if (lang) {
                                 if (lang === "en") {
-                                    var ddData = [{
+                                    let ddData = [{
                                             text: "EN",
                                             value: 'en',
                                             selected: true,
@@ -143,7 +144,7 @@ if (isset($_SESSION["lang"])) {
                                 }
                                 if (lang === "es") {
 
-                                    var ddData = [{
+                                    ddData = [{
                                             text: "IN",
                                             value: 'en',
                                             selected: false,
@@ -169,9 +170,9 @@ if (isset($_SESSION["lang"])) {
                                 selectText: "Idioma",
 
                                 onSelected: function(data) {
-                                    var valor = data['selectedData']['value'];
+                                    let valor = data['selectedData']['value'];
 
-                                    var formvalue = document.getElementById("select_lang").value = valor;
+                                    let formvalue = document.getElementById("select_lang").value = valor;
 
                                     contador = contador + 1;
 
@@ -188,14 +189,9 @@ if (isset($_SESSION["lang"])) {
                         </script>
 
                     </div>
-
-
-
                 </div>
             </div>
         </div>
-        <!--        <div id="particles-js"></div>
--->
 
         <div class="row">
 
@@ -269,8 +265,8 @@ if (isset($_SESSION["lang"])) {
                                         <input id="range_salary_filter" step="100000" style="width: 95%;" type="range" min="0" max="15000000" value="800000">
 
                                         <script>
-                                            var slider = document.getElementById("range_salary_filter");
-                                            var output = document.getElementById("rangeValue1");
+                                            let slider = document.getElementById("range_salary_filter");
+                                            let output = document.getElementById("rangeValue1");
 
 
 
@@ -286,16 +282,9 @@ if (isset($_SESSION["lang"])) {
 
                         <div style="margin-top: 2rem;">
                             <button type="button" onclick="filterIndex()" style="margin-left: 0;" class="btn-cuadrado-form btn-cuadrado-form--blue u-margin-top-2"><?php echo $lang["filter_Salary_search"] ?></button>
-
                         </div>
-
-
                     </div>
-
-
                 </div>
-
-
             </div>
         </div>
 
@@ -307,7 +296,7 @@ if (isset($_SESSION["lang"])) {
 
 
     <script>
-        var active_nav = 0;
+        let active_nav = 0;
 
 
         $('.btn_input_main').click(function() {
@@ -339,12 +328,7 @@ if (isset($_SESSION["lang"])) {
 
     <main>
         <section style="padding-top: 23rem;" class="section-about">
-            <!--     <div class="u-center-text u-margin-botton-8 u-margin-top-8">
-               <h2 class="heading-secondary">
-                   mejores caracteristicas
-               </h2>   
-            </div>
--->
+        
             <div class="row">
                 <div style="padding-bottom: 1rem;" class="container_section_about">
 
@@ -546,7 +530,7 @@ if (isset($_SESSION["lang"])) {
 
 
 
-                <!--                 <div class="row">
+                   <div class="row">
                     <div class="story">
                         <div class="row">
                             <div class="col-1-of-2">
@@ -592,7 +576,7 @@ if (isset($_SESSION["lang"])) {
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div> 
 
             <?php
             }
@@ -766,7 +750,6 @@ if (isset($_SESSION["lang"])) {
                     ?>
 
 
-
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -786,9 +769,6 @@ if (isset($_SESSION["lang"])) {
 
 
 
-
-    <!--  <script src="/js/particles.js"></script>-->
-
     <script src="/js/main.js"></script>
 
 
@@ -798,7 +778,7 @@ if (isset($_SESSION["lang"])) {
     <script src="../package/js/swiper.min.js"></script>
 
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        let swiper = new Swiper('.swiper-container', {
             initialSlide: 1,
             effect: 'coverflow',
             grabCursor: true,
@@ -819,266 +799,29 @@ if (isset($_SESSION["lang"])) {
 
 
     <script>
-        setTimeout(function() {
+   
 
-            var $input = $("#positionFilter");
+            let $input = $("#positionFilter");
+
+
+     
 
             $input.typed({
-                strings: ["<?php echo $lang["subtitle-option-3"] ?>",
-                    "<?php echo $lang["subtitle-option-3"] ?>",
-                    "<?php echo $lang["subtitle-option-3"] ?>",
-                    "<?php echo $lang["subtitle-option-3"] ?>",
-                    "<?php echo $lang["subtitle-option-3"] ?>",
+                strings: ["<?php echo $lang["subtitle-option-1"] ?>",
+                    "<?php echo $lang["subtitle-option-2"] ?>",
                     "<?php echo $lang["subtitle-option-3"] ?>"
                 ],
-                typeSpeed: 50, // typing speed
-                backDelay: 400, // pause before backspacing
-                loop: true, // loop on or off (true or false)
-                loopCount: false, // number of loops, false = infinite
-                callback: function() {} // call function after typing is done
+                typeSpeed: 100,
+                backDelay: 3000,
+                loop: true
             });
-        }, 1000);
-
-        ! function($) {
-
-            "use strict";
-
-            var Typed = function(el, options) {
-
-                // chosen element to manipulate text
-                this.el = $(el);
-                // options
-                this.options = $.extend({}, $.fn.typed.defaults, options);
-
-                // text content of element
-                this.text = this.el.text();
-
-                // typing speed
-                this.typeSpeed = this.options.typeSpeed;
-
-                // add a delay before typing starts
-                this.startDelay = this.options.startDelay;
-
-                // amount of time to wait before backspacing
-                this.backDelay = this.options.backDelay;
-
-                // input strings of text
-                this.strings = this.options.strings;
-
-                // character number position of current string
-                this.strPos = 0;
-
-                // current array position
-                this.arrayPos = 0;
-
-                // current string based on current values[] array position
-                this.string = this.strings[this.arrayPos];
-
-                // number to stop backspacing on.
-                // default 0, can change depending on how many chars
-                // you want to remove at the time
-                this.stopNum = 0;
-
-                // Looping logic
-                this.loop = this.options.loop;
-                this.loopCount = this.options.loopCount;
-                this.curLoop = 1;
-                if (this.loop === false) {
-                    // number in which to stop going through array
-                    // set to strings[] array (length - 1) to stop deleting after last string is typed
-                    this.stopArray = this.strings.length - 1;
-                } else {
-                    this.stopArray = this.strings.length;
-                }
-
-                // All systems go!
-                this.build();
-            }
-
-            Typed.prototype = {
-
-                constructor: Typed
-
-                    ,
-                init: function() {
-                        // begin the loop w/ first current string (global self.string)
-                        // current string will be passed as an argument each time after this
-                        var self = this;
-                        setTimeout(function() {
-                            // Start typing
-                            self.typewrite(self.string, self.strPos)
-                        }, self.startDelay);
-                    }
-
-                    ,
-                build: function() {
-                        // Insert cursor
-                        //this.el.after("<span id=\"typed-cursor\">|</span>");
-                        this.init();
-                    }
-
-                    // pass current string state to each function
-                    ,
-                typewrite: function(curString, curStrPos) {
-
-                        // varying values for setTimeout during typing
-                        // can't be global since number changes each time loop is executed
-                        var humanize = Math.round(Math.random() * (100 - 30)) + this.typeSpeed;
-                        var self = this;
-
-                        // ------------- optional ------------- //
-                        // backpaces a certain string faster
-                        // ------------------------------------ //
-                        // if (self.arrayPos == 1){
-                        // 	self.backDelay = 50;
-                        // }
-                        // else{ self.backDelay = 500; }
-
-                        // containg entire typing function in a timeout
-                        setTimeout(function() {
-
-                            // make sure array position is less than array length
-                            if (self.arrayPos < self.strings.length) {
-
-                                // start typing each new char into existing string
-                                // curString is function arg
-                                // CUSTOM PLACEHOLDER TEXT
-                                self.el.attr("placeholder", curString.substr(0, curStrPos));
-
-                                // check if current character number is the string's length
-                                // and if the current array position is less than the stopping point
-                                // if so, backspace after backDelay setting
-                                if (curStrPos > curString.length && self.arrayPos < self.stopArray) {
-                                    clearTimeout(clear);
-                                    var clear = setTimeout(function() {
-                                        self.backspace(curString, curStrPos);
-                                    }, self.backDelay);
-                                }
-
-                                // else, keep typing
-                                else {
-                                    // add characters one by one
-                                    curStrPos++;
-                                    // loop the function
-                                    self.typewrite(curString, curStrPos);
-                                    // if the array position is at the stopping position
-                                    // finish code, on to next task
-                                    if (self.loop === false) {
-                                        if (self.arrayPos === self.stopArray && curStrPos === curString.length) {
-                                            // animation that occurs on the last typed string
-                                            // fires callback function
-                                            var clear = self.options.callback();
-                                            clearTimeout(clear);
-                                        }
-                                    }
-                                }
-                            }
-                            // if the array position is greater than array length
-                            // and looping is active, reset array pos and start over.
-                            else if (self.loop === true && self.loopCount === false) {
-                                self.arrayPos = 0;
-                                self.init();
-                            } else if (self.loopCount !== false && self.curLoop < self.loopCount) {
-                                self.arrayPos = 0;
-                                self.curLoop = self.curLoop + 1;
-                                self.init();
-                            }
-
-                            // humanized value for typing
-                        }, humanize);
-
-                    }
-
-                    ,
-                backspace: function(curString, curStrPos) {
-
-                    // varying values for setTimeout during typing
-                    // can't be global since number changes each time loop is executed
-                    var humanize = Math.round(Math.random() * (100 - 30)) + this.typeSpeed;
-                    var self = this;
-
-                    setTimeout(function() {
-
-                        // ----- this part is optional ----- //
-                        // check string array position
-                        // on the first string, only delete one word
-                        // the stopNum actually represents the amount of chars to
-                        // keep in the current string. In my case it's 14.
-                        // if (self.arrayPos == 1){
-                        //	self.stopNum = 14;
-                        // }
-                        //every other time, delete the whole typed string
-                        // else{
-                        //	self.stopNum = 0;
-                        // }
-
-                        // ----- continue important stuff ----- //
-                        // replace text with current text + typed characters
-                        // CUSTOM PLACEHOLDER TEXT
-                        self.el.attr("placeholder", curString.substr(0, curStrPos));
-
-                        // if the number (id of character in current string) is
-                        // less than the stop number, keep going
-                        if (curStrPos > self.stopNum) {
-                            // subtract characters one by one
-                            curStrPos--;
-                            // loop the function
-                            self.backspace(curString, curStrPos);
-                        }
-                        // if the stop number has been reached, increase
-                        // array position to next string
-                        else if (curStrPos <= self.stopNum) {
-                            clearTimeout(clear);
-                            var clear = self.arrayPos = self.arrayPos + 1;
-                            // must pass new array position in this instance
-                            // instead of using global arrayPos
-                            self.typewrite(self.strings[self.arrayPos], curStrPos);
-                        }
-
-                        // humanized value for typing
-                    }, humanize);
-
-                }
-
-            }
-
-            $.fn.typed = function(option) {
-                return this.each(function() {
-                    var $this = $(this),
-                        data = $this.data('typed'),
-                        options = typeof option == 'object' && option
-                    if (!data) $this.data('typed', (data = new Typed(this, options)))
-                    if (typeof option == 'string') data[option]()
-                });
-            }
-
-            $.fn.typed.defaults = {
-                strings: ["These are the default values...", "You know what you should do?", "Use your own!", "Have a great day!"],
-                // typing and backspacing speed
-                typeSpeed: 0,
-                // time before typing starts
-                startDelay: 0,
-                // time before backspacing
-                backDelay: 500,
-                // loop
-                loop: false,
-                // false = infinite
-                loopCount: false,
-                // ending callback function
-                callback: function() {
-                    null
-                }
-            }
-
-
-        }(window.jQuery);
+    
+    
 
         function filterIndex() {
             positionFilter = document.getElementById("positionFilter").value;
 
             range_salary = $("#range_salary_filter").val();
-
-
 
 
             cityFilter = document.getElementById("cityFilter").value;
@@ -1089,9 +832,12 @@ if (isset($_SESSION["lang"])) {
                 window.location.href = "ofertas.php?city%5B%5D=" + cityFilter + "&slro=" + range_salary;
             }
 
-
             console.log(cityFilter + " = " + positionFilter);
         }
+
+
+
+
     </script>
 
 
