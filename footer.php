@@ -43,16 +43,13 @@
                 </form>
 
 
-
-
-
                 <div class="footer_container_header__info">
 
                     <div class="footer__contacto-info">
 
                         <ul class="footer_list">
                             <li class="footer__item-contacto"><a href="#" class="footer__link-contacto"><i class="fas fa-envelope" style="padding-right: 1rem;"></i> soporte@tujob.co</a></li>
-                            <li class="footer__item-contacto"><a href="https://api.whatsapp.com/send?phone=573041199528&text=Buen%20dia.%0ANesecito%20informacion%20porfavor..." class="footer__link-contacto"><i class="fas fa-phone-alt" style="padding-right: 1rem;"></i> 3041199528</a></li>
+                            <li class="footer__item-contacto"><a href="" class="footer__link-contacto"><i class="fas fa-phone-alt" style="padding-right: 1rem;"></i> 3041199528</a></li>
                         </ul>
 
                     </div>
@@ -60,24 +57,9 @@
                     <div class="footer_qr">
                         <img src="img/whatsapp.png" alt="whatsapp" class="footer__img-whatsapp">
                     </div>
-
-
                 </div>
-
-
-
-
-
-
             </div>
-
-
-
         </div>
-
-
-
-
     </div>
 
 
@@ -168,7 +150,7 @@
 
             <div>
                 <p class="footer__copyright">
-                    Developed by <a href="#" class="footer__link">ZearixTech </a> para <a href="#" class="footer__link">TuJob</a>. Copyright &copy; by TuJob.
+                    Desarrollado por <a href="#" class="footer__link">Johan Fernandez </a> para <a href="#" class="footer__link">TuJob</a>. Copyright &copy; by TuJob.
                 </p>
             </div>
 
